@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#content.bg1 {
+    background-image: url('images/images.jpg');
+}
+
+#content.bg2 {
+    background-image: url('images/istockphoto-1152237432-612x612.jpg');
+}
+
+#content.bg3 {
+    background-image: url('images/istockphoto-1714438754-612x612.jpg');
+}
+
+#content.bg4 {
+    background-image: url('images/istockphoto-537816526-612x612.jpg');
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+#controls button {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#shark {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    animation: Shark 8s linear infinite;
+}
+
+@keyframes Shark {
+    0% { left: 0; transform: scaleX(1); }
+    49% { left: calc(100% - 150px); transform: scaleX(1); }
+    50% { left: calc(100% - 150px); transform: scaleX(-1); }
+    99% { left: 0; transform: scaleX(-1); }
+    100% { left: 0; transform: scaleX(1); }
+}
+
+#turtle {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    animation: Turtle 20s linear infinite;
+}
+
+@keyframes Turtle {
+    0% { left: 0; transform: scaleX(1); }
+    49% { left: calc(100% - 100px); transform: scaleX(1); }
+    50% { left: calc(100% - 100px); transform: scaleX(-1); }
+    99% { left: 0; transform: scaleX(-1); }
+    100% { left: 0; transform: scaleX(1); }
+}
+
+#diver1 {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    animation: Diver 12s ease-in-out infinite;
+}
+
+@keyframes Diver {
+    0% { top: calc(100% - 100px); }
+    50% { top: 0; }
+    100% { top: calc(100% - 100px); }
+}
+
+#diver2 {
+    position: absolute;
+    left: 500px;
+    top: calc(100% - 100px);
+    animation: Diver 15s ease-in-out infinite;
+}
+
+#diver3 {
+    position: absolute;
+    left: 800px;
+    top: 0;
+    animation: Diver 10s ease-in-out infinite;
+}
+
+#faintSchool {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    animation: School 15s linear infinite;
+}
+
+@keyframes School {
+    0% { left: 0; transform: scaleX(1); }
+    49% { left: calc(100% - 200px); transform: scaleX(1); }
+    50% { left: calc(100% - 200px); transform: scaleX(-1); }
+    99% { left: 0; transform: scaleX(-1); }
+    100% { left: 0; transform: scaleX(1); }
+}
+
+#goldFishSchool {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    animation: School 12s linear infinite;
+}
